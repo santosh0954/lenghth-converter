@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="santosh">
+		<meta name="description" content="lenght unit converter">
+		<meta name="viewport" content="width = device-width, initial-scale=1.0">
+		<meta name="keywords" content="conveter, length conveter, length unit converter">
+		<title>length conveter</title>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="container">
+			<h1>Length converter</h1>
+			<form>
+				<label>
+					<span>Unit from</span>
+					<input type="text" id="from">
+					<select id="unit">
+						<option value="0" disabled selected>-- Unit --</option>
+						<option value="cm">Cm</option>
+						<option value="inch">Inch</option>
+					</select>
+				</label>
+				<div id="line"><span>to</span></div>
+				<input type="text" id="toUnit" value="Meter" disabled>
+				<button type = "button" id="convert">convert</button>
+			</form>
+			<div id="finalUnit">
+				<span id="converted">0.00</span>
+				<small id="convertedUnit">meter</small>
+			</div><!--final unit-->
+		
+		</div><!--container-->
+	
+		<script src="app.js"></script>
+	</body>
+</html>
